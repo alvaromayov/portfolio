@@ -1,8 +1,11 @@
 .header {
     display: flex;
-    background-color: #efefef;
     min-height: 60px;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+
 
     &__logo {
         width: 50%;
@@ -23,5 +26,12 @@
         &:hover {
             color: white;
         }
+    }
+
+    &--top {
+        background-color: #fff;
+    }
+    &--not-top {
+        background-color: #efefef;
     }
   }
