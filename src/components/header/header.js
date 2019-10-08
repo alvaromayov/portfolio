@@ -29,16 +29,18 @@ class Header extends Component {
 
     render() {
         return(
-            <nav className={"header " + this.state.isTop}>
-                <div className="header__logo">Icon</div>
-                <div className="header__links">
-                    <a className="header__link" href="/">Home</a>
-                    <a className="header__link" href="/">Blog</a>
-                    <a className="header__link" href="/">Projects</a>
-                    <a className="header__link" href="/">Contact</a>
-                    <button onClick={this.scroll}>click</button>
-                </div>
-            </nav>
+            <header>
+                <nav className={"header " + this.state.isTop}>
+                    <div className="header__logo">Icon</div>
+                    <div className="header__links">
+                        <a className="header__link" href="/">Home</a>
+                        <a className="header__link" href="/">Blog</a>
+                        <a className="header__link" href="/">Projects</a>
+                        <a className="header__link" href="/">Contact</a>
+                        <button onClick={this.scroll}>click</button>
+                    </div>
+                </nav>
+            </header>
         )
     }
 }
