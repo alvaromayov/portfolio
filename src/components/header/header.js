@@ -37,7 +37,6 @@ class Header extends Component {
                         <a className="header__link" href="/">Blog</a>
                         <a className="header__link" href="/">Projects</a>
                         <a className="header__link" href="/">Contact</a>
-                        <button onClick={this.scroll}>click</button>
                     </div>
                 </nav>
             </header>
