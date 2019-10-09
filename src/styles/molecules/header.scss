@@ -1,4 +1,6 @@
 .header {
+    $this: &;
+
     display: flex;
     min-height: 60px;
     align-items: center;
@@ -13,7 +15,18 @@
 
     &__links {
         display: none;
-    }  
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: $color-black;
+        transition: color 0.3s ease-in-out;
+        font-weight: 700;
+
+        &:hover {
+            color: $color-bronco;
+        }
+    }
 
     &--top {
         background-color: transparent;
@@ -21,7 +34,16 @@
 
     &--not-top {
         background-color: $color-scarpa-flow;
+        
+        #{$this}__link {
+            color:white;
+
+            &:hover {
+                color: $color-bronco;
+            }
+        }
     }
+
 
     @include breakpoint($breakpoint-tablet-min) {
         
@@ -37,5 +59,9 @@
             margin: 0 120px;
             justify-content: space-around;
         }  
+
+        &--not-top {
+            color: $color-white;
+        }
     }
 }
