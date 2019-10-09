@@ -18,13 +18,31 @@
     }
     
     &__link {
+        position: relative;
         text-decoration: none;
         color: $color-black;
         transition: color 0.3s ease-in-out;
         font-weight: 700;
+        overflow: hidden;
+        padding: 10px 0;
 
         &:hover {
             color: $color-bronco;
+            &:after {
+                transition: transform 0.7s;
+                transform: translateX(100%);
+            }
+        }
+
+        &:after {
+            content: '';
+            height: 2px;
+            width: 100%;
+            background-color: $color-bronco;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            transform: translateX(-101px);
         }
     }
 
