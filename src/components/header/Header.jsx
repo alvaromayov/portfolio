@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { ReactComponent as Logo } from '../../assets/logos/AM-logo.svg';
+
 
 class Header extends Component {
 
@@ -31,7 +33,9 @@ class Header extends Component {
         return(
             <header>
                 <nav className={"header " + this.state.isTop}>
-                    <div className="header__logo">Icon</div>
+                    <div className="header__logo">
+                        <Logo />
+                    </div>
                     <div className="header__links">
                         <a className="header__link" href="/">Home</a>
                         <a className="header__link" href="/">Blog</a>
