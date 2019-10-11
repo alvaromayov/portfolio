@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { ReactComponent as Logo } from '../../assets/logos/AM-logo.svg';
 
+import { ReactComponent as Logo } from '../../assets/logos/AM-logo.svg';
+import BurgerButton from './Burger';
 
 class Header extends Component {
 
@@ -42,6 +43,7 @@ class Header extends Component {
                         <a className="header__link" href="/">Projects</a>
                         <a className="header__link" href="/">Contact</a>
                     </div>
+                        <BurgerButton />
                 </nav>
             </header>
         )

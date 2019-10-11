@@ -1,0 +1,130 @@
+.burger-menu {
+  cursor: pointer;
+  display: inline-block;
+  padding: 21px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.f-button {
+  display: block;
+  width: 25px;
+  height: 1px;
+  margin-bottom: 6px;
+  background-color: black;
+  border-radius: 25px;
+  transition: all 0.3s;
+
+  &:nth-child(1) {
+    width: 15px;
+  }
+
+  &:nth-child(2) {
+    width: 9px;
+  }
+
+  &:nth-child(3) {
+    width: 4px;
+  }
+
+  &:nth-child(n + 4) {
+    position: relative;
+    top: -15px;
+    left: 0px;
+    width: 0;
+  }
+
+  &:nth-child(4) {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  &:nth-child(5) {
+    transform: rotate(0deg);
+    transform-origin: center;
+    margin-top: -7px;
+  }
+
+  &--active {
+    .f-button:nth-child(1) {
+      width: 15px;
+      transform: translatex(100%);
+      opacity: 0;
+    }
+
+    .f-button:nth-child(2) {
+      width: 9px;
+      transform: translatex(100%);
+      opacity: 0;
+      transition-delay: 0.125s;
+    }
+
+    .f-button:nth-child(3) {
+      width: 4px;
+      transform: translatex(100%);
+      opacity: 0;
+      transition-delay: 0.25s;
+    }
+
+    .f-button:nth-child(n + 4) {
+      transition-delay: 0.8s;
+      width: 25px;
+
+      transform-origin: center;
+    }
+
+    .f-button:nth-child(4) {
+      opacity: 1;
+      animation: butterfly-2 0.5s ease-in-out 0.6s;
+      animation-fill-mode: forwards;
+    }
+
+    .f-button:nth-child(5) {
+      opacity: 1;
+      animation: butterfly-1 0.5s ease-in-out 0.6s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes butterfly-1 {
+      0% {
+        width: 0px;
+        transform: rotate(0);
+      }
+
+      20% {
+        width: 25px;
+      }
+
+      40% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(45deg);
+        width: 25px;
+      }
+    }
+    @keyframes butterfly-2 {
+      0% {
+        width: 0px;
+        transform: rotate(0);
+      }
+
+      20% {
+        width: 25px;
+      }
+
+      40% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(-45deg);
+        width: 25px;
+      }
+    }
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    display: none;
+  }
+}
