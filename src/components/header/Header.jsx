@@ -17,7 +17,7 @@ class Header extends Component {
     componentDidMount() {
         document.addEventListener('scroll', () => {
           const isTop = window.scrollY;
-          if (isTop > 100) {
+          if (isTop > 70) {
               this.setState({
                   isTop: "header--not-top"
               })
@@ -33,7 +33,7 @@ class Header extends Component {
     render() {
         return(
             <header>
-                <nav className={"header " + this.state.isTop}>
+                <nav className={"header header__container " + this.state.isTop}>
                     <div className="header__logo">
                         <Logo />
                     </div>
@@ -43,7 +43,7 @@ class Header extends Component {
                         <a className="header__link" href="/">Projects</a>
                         <a className="header__link" href="/">Contact</a>
                     </div>
-                        <BurgerButton />
+                    <BurgerButton />
                 </nav>
             </header>
         )
