@@ -5,7 +5,7 @@ export default class Unveil extends Component {
     removeOverflow(params) {
         setTimeout(() => {
             document.querySelector('body').classList.remove('overflow');
-        }, 5000);
+        }, 4000);
     }
 
     componentWillMount(){
