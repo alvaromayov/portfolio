@@ -6,12 +6,13 @@ export default class Unveil extends Component {
         setTimeout(() => {
             document.querySelector('body').classList.remove('overflow');
         }, 4000);
+        this.deleteOverflow();
     }
 
     deleteOverflow() {
         setTimeout(() => {
             document.querySelector('.unveil').classList.add('delete-item');
-        }, 4500);
+        }, 600);
     }
 
     componentDidMount(){
