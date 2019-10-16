@@ -17,7 +17,7 @@ class Header extends Component {
     componentDidMount() {
         document.addEventListener('scroll', () => {
           const isTop = window.scrollY;
-          if (isTop > 70) {
+          if (isTop > 1) {
               this.setState({
                   isTop: "header--not-top"
               })
