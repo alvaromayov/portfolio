@@ -1,5 +1,7 @@
 @import './styles/mixins/index';
 @import './styles/settings/index';
+
+@import './styles/atoms/index';
 @import './styles/molecules/index';
 @import './styles/organisms/index';
 
@@ -14,4 +16,8 @@
     nav {
         opacity: 0;
     }
+}
+
+.delete-item {
+    display: none;
 }

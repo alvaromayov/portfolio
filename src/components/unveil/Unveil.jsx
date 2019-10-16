@@ -2,14 +2,21 @@ import React, { Component } from 'react';
 
 export default class Unveil extends Component {
 
-    removeOverflow(params) {
+    removeOverflow() {
         setTimeout(() => {
             document.querySelector('body').classList.remove('overflow');
         }, 4000);
     }
 
-    componentWillMount(){
+    deleteOverflow() {
+        setTimeout(() => {
+            document.querySelector('.unveil').classList.add('delete-item');
+        }, 4500);
+    }
+
+    componentDidMount(){
         this.removeOverflow();
+        this.deleteOverflow();
     }
 
     render() {
@@ -26,7 +33,6 @@ export default class Unveil extends Component {
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M639 459C639 464.523 634.523 469 629 469L352 469C346.477 469 342 464.523 342 459C342 453.477 346.477 449 352 449L629 449C634.523 449 639 453.477 639 459Z" stroke="white" stroke-width="5" stroke-linecap="round" />
                 </svg>
             </div>
-
         )
     }
 }
