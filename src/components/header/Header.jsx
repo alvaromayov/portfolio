@@ -26,7 +26,6 @@ class Header extends Component {
                     isTop: "header--top"
                 })
             }
-            console.log(this.state.isTop)
         });
       }
 
