@@ -1,0 +1,36 @@
+.font {
+    
+    &--white {
+        color: $color-white;
+    }
+
+    &--black {
+        color: $color-black;
+    }
+}
+
+.h1 {
+    font-family: $font-PT;
+    font-size: 40px;
+
+    @include breakpoint($breakpoint-tablet-min) {
+        font-size: 50px;
+    }
+
+    @include breakpoint($breakpoint-tablet-min) {
+        font-size: 80px;
+    }
+}
+
+.h2 {
+    font-family: $font-PT;
+    font-size: 30px;
+
+    @include breakpoint($breakpoint-tablet-min) {
+        font-size: 35px;
+    }
+
+    @include breakpoint($breakpoint-tablet-min) {
+        font-size: 60px;
+    }
+}
