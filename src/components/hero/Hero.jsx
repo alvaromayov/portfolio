@@ -1,4 +1,5 @@
 import React from 'react';
+import {ReactComponent as DownArrow} from '../../assets/icons/down-arrow.svg';
 
 function Hero(props) {
     return (
@@ -11,6 +12,10 @@ function Hero(props) {
                     </div>
                     <div className="hero__body">
                         <p className="p p--medium">{props.body}</p>
+                        <div className="hero__scroll-link">
+                            <span className="p p--small hero__link-text">Show me</span>
+                            <DownArrow className="hero__down-icon hero__down-icon--white" />
+                        </div>
                     </div>
                 </div>
             </div>
