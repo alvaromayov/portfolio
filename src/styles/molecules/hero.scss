@@ -29,6 +29,10 @@
                 opacity: 1;
             }
         }
+
+        @include breakpoint($breakpoint-desktop) {
+            max-width: 460px;
+        }
     }
 
     &__scroll-link {
