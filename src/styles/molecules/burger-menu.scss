@@ -1,7 +1,7 @@
 .burger-menu {
   cursor: pointer;
   display: inline-block;
-  padding: 21px;
+  padding: 19px 21px;
   transition: all 0.3s;
   overflow: hidden;
 }
@@ -25,6 +25,7 @@
 
   &:nth-child(3) {
     width: 4px;
+    margin-bottom: 0;
   }
 
   &:nth-child(n + 4) {

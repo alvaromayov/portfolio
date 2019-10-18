@@ -1,9 +1,5 @@
 header {
-    min-height: 70px;
-
-    @include breakpoint($breakpoint-desktop) {
-        min-height: 60px;
-    }
+    min-height: 60px;
 }
 
 .header {
@@ -11,7 +7,6 @@ header {
 
     display: flex;
     justify-content: space-between;
-    min-height: 60px;
     align-items: center;
     position: fixed;
     top: 0;
@@ -92,7 +87,7 @@ header {
     @include breakpoint($breakpoint-desktop) {
 
         &__container {
-            padding: 0 40px;
+            padding: 11px 40px;
         }    
 
         &__links {
