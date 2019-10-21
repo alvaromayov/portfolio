@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { ReactComponent as Logo } from '../../assets/logos/AM-logo.svg';
 import BurgerButton from './Burger';
+import Link from './Link';
 
 class Header extends Component {
 
@@ -17,7 +18,7 @@ class Header extends Component {
     componentDidMount() {
         document.addEventListener('scroll', () => {
           const isTop = window.scrollY;
-          if (isTop > 70) {
+          if (isTop > 1) {
               this.setState({
                   isTop: "header--not-top"
               })
@@ -26,7 +27,6 @@ class Header extends Component {
                     isTop: "header--top"
                 })
             }
-            console.log(this.state.isTop)
         });
       }
 
@@ -38,10 +38,11 @@ class Header extends Component {
                         <Logo />
                     </div>
                     <div className="header__links">
-                        <a className="header__link" href="/">Home</a>
+                        {/* <a className="header__link" href="/">Home</a>
                         <a className="header__link" href="/">Blog</a>
                         <a className="header__link" href="/">Projects</a>
-                        <a className="header__link" href="/">Contact</a>
+                        <a className="header__link" href="/">Contact</a> */}
+                        <Link />
                     </div>
                     <BurgerButton />
                 </nav>

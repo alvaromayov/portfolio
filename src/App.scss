@@ -1,7 +1,23 @@
 @import './styles/mixins/index';
 @import './styles/settings/index';
+
+@import './styles/atoms/index';
 @import './styles/molecules/index';
+@import './styles/organisms/index';
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .overflow {
     overflow-y: hidden;
+
+    nav {
+        opacity: 0;
+    }
+}
+
+.delete-item {
+    display: none;
 }

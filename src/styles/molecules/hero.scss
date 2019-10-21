@@ -1,0 +1,117 @@
+.hero {
+    $this: &;
+
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__heading {
+        transform: translateX(-200%);
+
+        animation: slide-in 2s ease-in-out forwards 5s;
+
+        @keyframes slide-in {
+            to {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    &__body {
+        padding: 20px 0;
+        opacity: 0;
+        animation: opacity 1s ease-in-out forwards 7.5s;
+
+        @keyframes opacity {
+            to{
+                opacity: 1;
+            }
+        }
+
+        @include breakpoint($breakpoint-desktop) {
+            max-width: 460px;
+        }
+    }
+
+    &__scroll-link {
+        max-width: 80px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 10px 20px 10px 0;
+        margin-top: 25px;
+
+        @include breakpoint($breakpoint-desktop) {
+        margin-top: 10px;
+
+            &:hover {
+                #{$this}__down-icon {
+                    animation: down 0.3s forwards ease-in-out;
+                }
+
+                #{$this}__link-text {
+                    &:after {
+                        transition: transform 0.7s;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &__link-text {
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            height: 1px;
+            width: 100%;
+            background-color: $color-white;
+            position: absolute;
+            top: 18px;
+            left: 0;
+            transform: translateX(-102%);
+        }
+    }
+
+    &__down-icon {
+        transform: rotate(-90deg) translateX(0);
+        width: 13px;
+        animation: bounce 5s infinite 6s;
+        
+        &--white {
+            fill: $color-white;
+        }
+
+        @keyframes bounce {
+            5% {
+                transform: rotate(-90deg) translateX(-15px);
+            }
+            10% {
+                transform: rotate(-90deg) translateX(-5px);
+            }
+            15% {
+                transform: rotate(-90deg) translateX(-15px);                
+            }
+            20% {
+                transform: rotate(-90deg) translateX(0);
+            }
+        }
+
+        @keyframes down {
+            to {
+                transform: rotate(-90deg) translateX(-15px);
+            }
+        }
+    }
+
+    &--dark {
+        background-color: $color-black;
+
+        @extend .font--white;
+    }
+}
