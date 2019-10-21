@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { ReactComponent as Logo } from '../../assets/logos/AM-logo.svg';
 import BurgerButton from './Burger';
+import Link from './Link';
 
 class Header extends Component {
 
@@ -37,10 +38,11 @@ class Header extends Component {
                         <Logo />
                     </div>
                     <div className="header__links">
-                        <a className="header__link" href="/">Home</a>
+                        {/* <a className="header__link" href="/">Home</a>
                         <a className="header__link" href="/">Blog</a>
                         <a className="header__link" href="/">Projects</a>
-                        <a className="header__link" href="/">Contact</a>
+                        <a className="header__link" href="/">Contact</a> */}
+                        <Link />
                     </div>
                     <BurgerButton />
                 </nav>
