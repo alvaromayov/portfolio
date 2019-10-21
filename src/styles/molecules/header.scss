@@ -22,33 +22,38 @@ header {
     &__links {
         display: none;
     }
-    
+
     &__link {
         position: relative;
         text-decoration: none;
-        color: $color-black;
+        color: $color-white;
         transition: color 0.3s ease-in-out;
         font-weight: 700;
+        font-size: 25px;
         overflow: hidden;
         padding: 10px 0;
+    }
 
-        &:hover {
-            color: $color-bronco;
-            &:after {
-                transition: transform 0.7s;
-                transform: translateX(100%);
-            }
+    &__mobile {
+        background-color: $color-scarpa-flow;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: 100vh;
+        width: 90%;
+        transform: translateX(-101%);
+        transition: transform 0.5s ease;
+
+        &--active {
+            transform: translateX(0);
         }
 
-        &:after {
-            content: '';
-            height: 2px;
-            width: 100%;
-            background-color: $color-bronco;
-            position: absolute;
-            top: 30px;
-            left: 0;
-            transform: translateX(-101px);
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
         }
     }
 
@@ -96,6 +101,41 @@ header {
             margin: 0 120px;
             justify-content: space-around;
         }  
+
+        &__link {
+            color: $color-black;
+            font-size: 16px;
+    
+            &:hover {
+                color: $color-bronco;
+                &:after {
+                    transition: transform 0.7s;
+                    transform: translateX(100%);
+                }
+            }
+    
+            &:after {
+                content: '';
+                height: 2px;
+                width: 100%;
+                background-color: $color-bronco;
+                position: absolute;
+                top: 30px;
+                left: 0;
+                transform: translateX(-101px);
+            }
+        }
+
+        &__mobile {
+            display: none;
+            
+            &-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
 
         &--not-top {
             color: $color-white;
