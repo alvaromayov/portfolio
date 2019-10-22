@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.43822eeb.chunk.css",
-    "main.js": "/home/static/js/main.d79eb2bb.chunk.js",
-    "main.js.map": "/home/static/js/main.d79eb2bb.chunk.js.map",
-    "runtime-main.js": "/home/static/js/runtime-main.2d5b51f7.js",
-    "runtime-main.js.map": "/home/static/js/runtime-main.2d5b51f7.js.map",
-    "static/js/2.0436d047.chunk.js": "/home/static/js/2.0436d047.chunk.js",
-    "static/js/2.0436d047.chunk.js.map": "/home/static/js/2.0436d047.chunk.js.map",
-    "index.html": "/home/index.html",
-    "precache-manifest.66e07cfa8c234caab38362e4bc11974f.js": "/home/precache-manifest.66e07cfa8c234caab38362e4bc11974f.js",
-    "service-worker.js": "/home/service-worker.js",
-    "static/css/main.43822eeb.chunk.css.map": "/home/static/css/main.43822eeb.chunk.css.map",
-    "static/media/AM-logo.00fd0c7b.svg": "/home/static/media/AM-logo.00fd0c7b.svg",
-    "static/media/down-arrow.c0259fb2.svg": "/home/static/media/down-arrow.c0259fb2.svg"
+    "main.css": "/portfolio/static/css/main.43822eeb.chunk.css",
+    "main.js": "/portfolio/static/js/main.06daec03.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.06daec03.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.6c1b9ebb.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.6c1b9ebb.js.map",
+    "static/js/2.0436d047.chunk.js": "/portfolio/static/js/2.0436d047.chunk.js",
+    "static/js/2.0436d047.chunk.js.map": "/portfolio/static/js/2.0436d047.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.4a2314678688a762647524cc43346b03.js": "/portfolio/precache-manifest.4a2314678688a762647524cc43346b03.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.43822eeb.chunk.css.map": "/portfolio/static/css/main.43822eeb.chunk.css.map",
+    "static/media/AM-logo.00fd0c7b.svg": "/portfolio/static/media/AM-logo.00fd0c7b.svg",
+    "static/media/down-arrow.c0259fb2.svg": "/portfolio/static/media/down-arrow.c0259fb2.svg"
   }
 }
