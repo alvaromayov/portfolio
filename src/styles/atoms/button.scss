@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 10px;
+    font-size: 12px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &__green {
+        background-color: $color-lochinvar;
+        color: $color-white;
+        border: none;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-lochinvar;
+        }
+    }
+
+    @include breakpoint($breakpoint-desktop) {
+        padding: 10px 20px;
+    }
+}
