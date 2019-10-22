@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './components/header/Header';
 import Unveil from './components/unveil/Unveil';
 import Hero from './components/hero/Hero';
+import Cookies from './components/cookies/Cookies';
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
           title="Build digital experiences"
           body="Hello! My name is Alvaro and I am a Front-End Developer. Play around with my site to learn a bit more about me and what I do."
         />
-        <section id="next-section">
-          <h1>hi</h1>
-        </section>
+        <Cookies />
       </main>
+      <footer>
+      </footer>
     </div>
   );
 }

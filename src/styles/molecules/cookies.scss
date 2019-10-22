@@ -1,0 +1,56 @@
+.cookies {
+    padding: 20px 0;
+    background-color: $color-scarpa-flow;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in-out;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__button {
+        @extend .button__green;
+        margin-top: 15px;
+    }
+
+    &__link {
+        &:link {
+            color: $color-white;
+        }
+
+        &:active {
+            color: $color-white;
+        }
+
+        &:hover {
+            color: $color-bronco;
+        }
+        &:visited {
+            color: $color-bronco;
+        }
+    }
+
+    &--not-accepted {
+     transform: translateY(0);   
+    }
+    @include breakpoint($breakpoint-desktop) {
+        
+        padding: 30px 0;
+        
+        &__container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__button {
+            margin-top: 0;
+        }
+    }
+}
