@@ -37,7 +37,8 @@
     }
 
     &--not-accepted {
-     transform: translateY(0);   
+        @extend .cookies;
+        transform: translateY(0);   
     }
     @include breakpoint($breakpoint-desktop) {
         
