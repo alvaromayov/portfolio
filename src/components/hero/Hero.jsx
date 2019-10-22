@@ -5,10 +5,9 @@ import zenscroll from 'zenscroll';
 class Hero extends Component {
 
     scroll() {
-        zenscroll.setup(null, 60)
         zenscroll.setup(null, 60);
         const nextSection = document.querySelector('#next-section');
-        zenscroll.to(nextSection)
+        zenscroll.to(nextSection);
     }
 
     render() {
