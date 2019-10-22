@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.43822eeb.chunk.css",
+    "main.js": "/home/static/js/main.d79eb2bb.chunk.js",
+    "main.js.map": "/home/static/js/main.d79eb2bb.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.2d5b51f7.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.2d5b51f7.js.map",
+    "static/js/2.0436d047.chunk.js": "/home/static/js/2.0436d047.chunk.js",
+    "static/js/2.0436d047.chunk.js.map": "/home/static/js/2.0436d047.chunk.js.map",
+    "index.html": "/home/index.html",
+    "precache-manifest.66e07cfa8c234caab38362e4bc11974f.js": "/home/precache-manifest.66e07cfa8c234caab38362e4bc11974f.js",
+    "service-worker.js": "/home/service-worker.js",
+    "static/css/main.43822eeb.chunk.css.map": "/home/static/css/main.43822eeb.chunk.css.map",
+    "static/media/AM-logo.00fd0c7b.svg": "/home/static/media/AM-logo.00fd0c7b.svg",
+    "static/media/down-arrow.c0259fb2.svg": "/home/static/media/down-arrow.c0259fb2.svg"
+  }
+}
