@@ -39,6 +39,7 @@
     &--not-accepted {
         @extend .cookies;
         transform: translateY(0);   
+        z-index: 100;
     }
     @include breakpoint($breakpoint-desktop) {
         
