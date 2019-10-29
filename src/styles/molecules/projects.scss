@@ -6,12 +6,13 @@
     }
 
     &__heading {
-        @extend .h3--black;
+        @extend .h3--white;
         text-align: center;
     }
 
     &__subheading {
         @extend .p--small;
+        @extend .p--white;
         display: block;
         text-align: center;
     }

@@ -4,7 +4,7 @@ import React from 'react';
 import Project from './Project';
 import Button from '../shared/Button';
 
-function Projects() {
+function Projects(props) {
 
     const params = {
         slidesPerView: 2,
@@ -24,7 +24,7 @@ function Projects() {
       }
 
     return (
-        <section id="projects">
+        <section className={`background--${props.background}`} id="projects">
             <div className="block">
                 <div className="projects">
                     <div className="container">

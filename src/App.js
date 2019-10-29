@@ -17,7 +17,7 @@ function App() {
           title="Build digital experiences"
           body="Hello! My name is Alvaro and I am a Front-End Developer. Play around with my site to learn a bit more about me and what I do."
         />
-        <Projects />
+        <Projects background="grey"/>
         <CookiesBanner />
       </main>
       <footer>
