@@ -6,7 +6,7 @@ class Hero extends Component {
 
     scroll() {
         zenscroll.setup(null, 60);
-        const nextSection = document.querySelector('#next-section');
+        const nextSection = document.querySelector('#projects');
         zenscroll.to(nextSection);
     }
 

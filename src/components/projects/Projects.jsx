@@ -24,7 +24,7 @@ function Projects() {
       }
 
     return (
-        <section>
+        <section id="projects">
             <div className="block">
                 <div className="projects">
                     <div className="container">
