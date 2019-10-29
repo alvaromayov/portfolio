@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import Unveil from './components/unveil/Unveil';
 import Hero from './components/hero/Hero';
 import CookiesBanner from './components/cookies/Cookies';
+import Projects from './components/projects/Projects';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           title="Build digital experiences"
           body="Hello! My name is Alvaro and I am a Front-End Developer. Play around with my site to learn a bit more about me and what I do."
         />
+        <Projects />
         <CookiesBanner />
       </main>
       <footer>
