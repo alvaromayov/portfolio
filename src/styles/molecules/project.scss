@@ -1,0 +1,63 @@
+.project {
+    border: 1px solid $color-bermuda-gray;
+    border-radius: 3px;
+    width: 250px;
+    min-height: 200px;;
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 17px 18px -16px;
+    
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__title {
+        height: 100%;
+        position: absolute;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-bermuda-gray-translucid;
+        transition: opacity 0.6s ease-in-out;
+        cursor: pointer;
+    }
+
+    &__heading {
+        @extend .h4--white;
+        margin-bottom: 10px;
+    }
+
+    &__subheading {
+        @extend .p--small;
+        @extend .p--white;
+        text-align: center;
+    }
+
+    &__image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    
+    &__image {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        top: 0;
+        left: 0;
+    }
+
+    @include breakpoint($breakpoint-desktop) {
+        &__title {
+            &:hover {
+                opacity: 0;
+            }
+        }
+    }
+}
