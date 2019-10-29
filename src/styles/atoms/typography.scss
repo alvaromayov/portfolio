@@ -26,12 +26,68 @@
     font-family: $font-PT;
     font-size: 30px;
 
+    &--black {
+        @extend .h2;
+        color: $color-black;
+    }
+
+    &--white {
+        @extend .h2;
+        color: $color-white;
+    }
+
     @include breakpoint($breakpoint-tablet-min) {
         font-size: 35px;
     }
 
     @include breakpoint($breakpoint-tablet-min) {
         font-size: 60px;
+    }
+}
+
+.h3 {
+    font-family: $font-PT;
+    font-size: 30px;
+
+    &--black {
+        @extend .h3;
+        color: $color-black;
+    }
+
+    &--white {
+        @extend .h3;
+        color: $color-white;
+    }
+
+    @include breakpoint($breakpoint-tablet-min) {
+        font-size: 35px;
+    }
+
+    @include breakpoint($breakpoint-tablet-min) {
+        font-size: 40px;
+    }
+}
+
+.h4 {
+    font-family: $font-PT;
+    font-size: 18px;
+
+    &--black {
+        @extend .h4;
+        color: $color-black;
+    }
+
+    &--white {
+        @extend .h4;
+        color: $color-white;
+    }
+
+    @include breakpoint($breakpoint-tablet-min) {
+        font-size: 20px;
+    }
+
+    @include breakpoint($breakpoint-tablet-min) {
+        font-size: 28px;
     }
 }
 
@@ -51,7 +107,7 @@
     }
 
     &--white {
+        @extend .p;
         color: $color-white;
     }
-
 }
