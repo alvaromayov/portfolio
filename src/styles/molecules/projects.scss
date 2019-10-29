@@ -1,6 +1,10 @@
 .projects {
     overflow: hidden;
 
+    &__title {
+        margin-bottom: 30px;
+    }
+
     &__heading {
         @extend .h3--black;
         text-align: center;
@@ -18,12 +22,18 @@
         width: 200%;
         transform: translateX(20px);
 
-        @include breakpoint($breakpoint-desktop) {
+        @include breakpoint($breakpoint-tablet-min) {
             padding: 30px 0;
         }
 
         @include breakpoint($breakpoint-desktop) {
             padding: 60px 0;
+        }
+    }
+
+    @include breakpoint($breakpoint-desktop) {
+        &__title {
+            margin-bottom: 50px;
         }
     }
 }
