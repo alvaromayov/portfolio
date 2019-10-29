@@ -4,8 +4,25 @@
     padding: 6px 10px;
     font-size: 12px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+
+    &--center {
+        display: flex;
+        justify-content: center;
+    }
+
+    &--left {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &--right {
+        display: flex;
+        justify-content: flex-end;
+    }
 
     &__green {
+        @extend .button;
         background-color: $color-lochinvar;
         color: $color-white;
         border: none;
@@ -13,6 +30,17 @@
         &:hover {
             background-color: $color-white;
             color: $color-lochinvar;
+        }
+    }
+
+    &__blue {
+        @extend .button;
+        background-color: $color-bermuda-gray-translucid;
+        color: $color-white;
+        border: none;
+
+        &:hover {
+            background-color: $color-bermuda-gray;
         }
     }
 

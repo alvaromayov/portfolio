@@ -2,6 +2,7 @@ import Swiper from 'react-id-swiper';
 
 import React from 'react';
 import Project from './Project';
+import Button from '../shared/Button';
 
 function Projects() {
 
@@ -40,6 +41,7 @@ function Projects() {
                             <div><Project title="Weather App" description="This is the app I have made to check the weather" image="https://openweather.co.uk/storage/app/media/we-are-pleased-announce-our-new-statistical-weather-data-api-now-available.png" /></div>
                             <div><Project title="See all projects" description="Discover the rest of things I have worked on" image="" /></div>
                         </Swiper>
+                        <Button color="blue" position="center" url="/"/>
                     </div>
                 </div>
             </div>

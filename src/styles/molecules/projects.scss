@@ -31,6 +31,16 @@
         }
     }
 
+    &__button {
+        @extend .button__blue;
+        padding: 10px 15px;
+        margin-top: 20px;
+
+        @include breakpoint($breakpoint-desktop) {
+            margin-top: 50px;
+        }
+    }
+
     @include breakpoint($breakpoint-desktop) {
         &__title {
             margin-bottom: 50px;
